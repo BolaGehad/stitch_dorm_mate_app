@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome to Dorm Mate</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#111d25",
+                        "surface-container-low": "#ebf5ff",
+                        "on-surface-variant": "#3c4947",
+                        "inverse-on-surface": "#e6f2fe",
+                        "surface": "#f6faff",
+                        "on-tertiary-fixed": "#171c1f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#d8e4f0",
+                        "surface-container": "#e3effb",
+                        "secondary": "#895100",
+                        "primary-fixed": "#70f8e8",
+                        "surface-variant": "#d8e4f0",
+                        "on-primary-container": "#004c46",
+                        "surface-dim": "#cfdce7",
+                        "outline-variant": "#bbcac6",
+                        "on-primary-fixed": "#00201d",
+                        "tertiary": "#5a5f62",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#4fdbcc",
+                        "inverse-primary": "#4fdbcc",
+                        "on-background": "#111d25",
+                        "tertiary-fixed": "#dee3e6",
+                        "inverse-surface": "#26323b",
+                        "outline": "#6c7a77",
+                        "on-primary-fixed-variant": "#005049",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#ffdcbc",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#acb1b4",
+                        "background": "#f6faff",
+                        "primary": "#006a62",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#ffb86b",
+                        "on-secondary-fixed": "#2c1700",
+                        "on-tertiary-fixed-variant": "#42484a",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#663b00",
+                        "surface-container-high": "#ddeaf5",
+                        "tertiary-fixed-dim": "#c2c7ca",
+                        "secondary-container": "#fd9d1a",
+                        "primary-container": "#2ec4b6",
+                        "surface-tint": "#006a62",
+                        "on-tertiary-container": "#3e4447",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#683d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-gap-sm": "12px",
+                        "section-margin": "32px",
+                        "base": "8px",
+                        "stack-gap-md": "16px",
+                        "container-padding": "20px",
+                        "stack-gap-lg": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["17px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["11px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+                        "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .blueprint-bg {
+            background-color: #f6faff;
+            background-image: 
+                linear-gradient(rgba(46, 196, 182, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(46, 196, 182, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            position: relative;
+        }
+        .blueprint-bg::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10L90 10L90 90L10 90Z' fill='none' stroke='rgba(46, 196, 182, 0.03)' stroke-width='0.5'/%3E%3Cpath d='M30 10V90M70 10V90M10 30H90M10 70H90' stroke='rgba(46, 196, 182, 0.02)' stroke-width='0.2'/%3E%3C/svg%3E");
+            background-size: 300px 300px;
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="blueprint-bg min-h-screen flex flex-col font-body-md text-on-surface antialiased overflow-hidden">
+<main class="flex-grow flex items-center justify-center px-container-padding py-section-margin relative z-10">
+<div class="w-full max-w-md">
+<div class="flex flex-col items-center mb-stack-gap-lg text-center">
+<div class="w-16 h-16 bg-primary-container rounded-2xl shadow-[0_4px_20px_rgba(46,196,182,0.15)] flex items-center justify-center mb-stack-gap-md transform -rotate-3">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="home_work" data-weight="fill">home_work</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">Welcome to Dorm Mate</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Your shared living, perfectly synchronized.</p>
+</div>
+<div class="bg-surface-container-lowest/80 backdrop-blur-xl border border-white rounded-[16px] p-stack-gap-lg shadow-[0_4px_20px_rgba(46,196,182,0.08)]">
+<form class="space-y-stack-gap-md" onsubmit="return false;">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant block ml-1" for="email">University Email</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary-container transition-colors" data-icon="alternate_email">alternate_email</span>
+<input class="w-full h-14 pl-12 pr-4 bg-surface border border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-xl font-body-md text-on-surface placeholder:text-outline/50 transition-all outline-none" id="email" placeholder="name@university.edu" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant block ml-1" for="password">Password</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary-container transition-colors" data-icon="lock">lock</span>
+<input class="w-full h-14 pl-12 pr-12 bg-surface border border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-xl font-body-md text-on-surface placeholder:text-outline/50 transition-all outline-none" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface-variant" type="button">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center space-x-2 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary-container focus:ring-primary-container/20 cursor-pointer" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Remember me</span>
+</label>
+<a class="font-label-md text-label-md text-primary-container hover:underline decoration-2 underline-offset-4" href="#">Forgot Password?</a>
+</div>
+<div class="pt-stack-gap-sm space-y-4">
+<button class="w-full h-14 bg-primary-container text-white font-headline-md text-body-lg rounded-xl shadow-[0_4px_12px_rgba(46,196,182,0.2)] hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Login</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-outline-variant"></div>
+<span class="flex-shrink mx-4 font-label-sm text-label-sm text-outline uppercase tracking-widest">New to the house?</span>
+<div class="flex-grow border-t border-outline-variant"></div>
+</div>
+<button class="w-full h-14 bg-white border-2 border-primary-container/20 text-primary-container font-headline-md text-body-lg rounded-xl hover:bg-surface transition-all active:scale-[0.98]" type="button">
+                            Create Account
+                        </button>
+</div>
+</form>
+</div>
+<div class="mt-section-margin flex justify-center gap-stack-gap-md">
+<div class="flex items-center gap-stack-gap-sm p-3 bg-surface-container/50 rounded-xl border border-white/50 backdrop-blur-sm">
+<img alt="University Partnership" class="w-6 h-6" data-alt="close-up of a small minimalist university graduation cap icon with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg0zuVpvhTzfmPpm5dvDXv0bLjyqksFUw1iDRMXbmN09ESaspN8oZavrlCHKEtb50IWw9OidT31QA2PV_fsYhI_mP1vYD7mQRuENSrZMWXGOgqdHf-XLd_6mPXLkTgEzIdw5CtDBMGh03U115vHp3vojA0x3tdNSDyL1e8bhUKgTBHQWA5ff_gJZpnt6p84cZf0_Du8SlNV7t16wjf1RDjd3yRagqXzEXmQJh7Cix15FmPOHRtuNZQfGFIdjoG6xaMuYGLV2e_16Q"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Partnered with 200+ Campuses</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-stack-gap-lg px-container-padding flex justify-center opacity-60">
+<div class="flex items-center gap-6">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container" href="#">Privacy Policy</a>
+<div class="w-1 h-1 bg-outline-variant rounded-full"></div>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container" href="#">Terms of Service</a>
+<div class="w-1 h-1 bg-outline-variant rounded-full"></div>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container" href="#">Help Center</a>
+</div>
+</footer>
+</body></html>

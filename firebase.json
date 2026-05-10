@@ -1,0 +1,28 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "dorm-mate-ed237",
+          "appId": "1:1083899114977:android:6efd4bfe53a9a362480ea0",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "dorm-mate-ed237",
+          "configurations": {
+            "android": "1:1083899114977:android:6efd4bfe53a9a362480ea0",
+            "ios": "1:1083899114977:ios:7e67469ec343fec9480ea0",
+            "macos": "1:1083899114977:ios:7e67469ec343fec9480ea0",
+            "web": "1:1083899114977:web:aacc42be492e70a0480ea0",
+            "windows": "1:1083899114977:web:f89d2bfaf50350a7480ea0"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  }
+}
